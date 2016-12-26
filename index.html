@@ -20,11 +20,6 @@
 			padding: 3em;
 			overflow: hidden;
 		}
-		
-		#dialog {
-			height: 95%;
-			width: 95%;
-		}
 			
 	</style>
 
@@ -33,13 +28,7 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-	<script language="javascript" type="text/javascript">
-		$(document).ready(function() {
-			$("#trigger").click(function() {
-				$("#dialog").dialog();
-			});
-		});
-	</script>
+	
 
 </head>
 <body>
@@ -75,13 +64,13 @@
 				<a href="/Syllabi-Supply/web/viewer.html?file=CSC236_Bonus.pdf">View CSC236 Bonus</a>
 			</li>
 			<li>
-				<a href="#" id="trigger">Testing</a>
+				<a href="#popupPDF" data-rel="popup" data-position-to="window">Testing</a>
 			</li>
 		</ul>
 	</div>
 
-	<div id="dialog" title="Syllabus" style="display:none">
-		<iframe src="/Syllabi-Supply/web/viewer.html?file=Test.pdf"></iframe>
+	<div data-role="popup" id="popupPDF" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+		<iframe src="/Syllabi-Supply/web/viewer.html?file=Test.pdf" width="95%" height="95%" seamless=""></iframe>
 	</div>
 
 </body>
