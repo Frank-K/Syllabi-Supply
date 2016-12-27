@@ -4,14 +4,18 @@
 	<title>Sillabi Supply</title>
 
 	<style type="text/css">
+		#header {
+			position: fixed;
+			width: 100%;
+			top: 0;
+		}
+
 		.top {
 			list-style-type: none;
-			margin: 0;
-			padding: 0;
 			overflow: hidden;
-			position: fixed;
-			top: 0;
 			width: 100%;
+			text-align: right;
+			float: left;
 		}
 
 		.courses {
@@ -20,7 +24,37 @@
 			padding: 3em;
 			overflow: hidden;
 		}
+
+		.title {
+			
+		}
+
+		.one {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		.two {
+			float: left;
+		}
 		
+		.two a {
+			display: block;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		 }
+		
+		body {
+			padding: 0;
+			margin: 0;
+		}
 			
 	</style>
 
@@ -44,25 +78,28 @@
 <body>
 
 	<header>
-		SILLABI SUPPLY
-
 		<nav>
-			<ul class="top">
-				<li style="float: right; padding-right: 5em;">
+			<ul class="one">
+				<li class="two">
+					<a href="http://google.ca"> SILLABI SUPPLY </a>
+				</li>
+				
+				<li class="two" style="float:right">
+					<a href="http://google.ca">GitHub Code</a>
+				</li>
+
+				<li class="two" style="float:right">
 					<a href="http://google.com">Submit a Syllabus</a>
 				</li>
+				
 			</ul>
 		</nav>
 	</header>
 
 	<div id="content">
-		<div>
-			Courses
-		</div>
-
 		<ul class="courses">
 			<li>
-				<a href="http://google.com">CSC108</a>
+				<a href="/Syllabi-Supply/web/viewer.html?file=CSC236_Bonus.pdf">CSC108</a>
 			</li>
 			<li>
 				<a href="http://google.com">CSC148</a>
@@ -71,7 +108,7 @@
 				<a href="http://google.com">CSC165</a>
 			</li>
 			<li>
-				<a href="/Syllabi-Supply/web/viewer.html?file=CSC236_Bonus.pdf">View CSC236 Bonus</a>
+				<a href="/Syllabi-Supply/web/viewer.html?file=CSC236_Bonus.pdf" class="iframe">View CSC236 Bonus</a>
 			</li>
 		</ul>
 	</div>
