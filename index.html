@@ -4,20 +4,6 @@
 	<title>Syllabi Supply</title>
 
 	<style type="text/css">
-		#header {
-			position: fixed;
-			width: 100%;
-			top: 0;
-		}
-
-		.top {
-			list-style-type: none;
-			overflow: hidden;
-			width: 100%;
-			text-align: right;
-			float: left;
-		}
-
 		.courses {
 			list-style-type: none;
 			margin: 0;
@@ -39,19 +25,16 @@
 			position: fixed;
 			top: 0;
 			width: 100%;
-			vertical-align: middle;
-			display: inline;
-			height: 70px;
 		}
 
 		.two {
 			float: left;
-			display: inline;
 		}
 		
 		.two a {
 			display: block;
 			text-align: center;
+			padding: 29px 16px;
 			text-decoration: none;
 		 }
 		
@@ -73,11 +56,18 @@
 			padding-right: 3px;
 			border-left: 2px solid #000000;
 			border-right: 2px solid #000000;
+			cursor: pointer;
+			background-color: #505D89;
 		}
 
 		#content ul li {
 			padding-left: 4.5px;
-			padding-right: 1px;
+			padding-right: 4.5px;
+
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-bottom: 2px solid #000000;
+
 		}
 
 		#title {
@@ -90,12 +80,18 @@
 		.subTitle {
 			font-family: 'Roboto', sans-serif;
 			letter-spacing: 1.5px;
-			font-size: .5em;
+			font-size: 0.55em;
+			padding-top: 11px;
+			color: white;
 		}
 
-		
+		header {
+			height: 60px;
+		}
 
-
+		a {
+			color: white;
+		}
 			
 	</style>
 
@@ -124,7 +120,7 @@
 		<nav>
 			<ul class="one">
 				<li class="two">
-					<a href="http://google.ca" id="title" style="padding-left:32px;"><b>SYLLABI SUPPLY</b></a>
+					<a href="http://google.ca" id="title"><b>SYLLABI SUPPLY</b></a>
 				</li>
 				
 				<li class="two subTitle" style="float:right; padding-right:16px;">
