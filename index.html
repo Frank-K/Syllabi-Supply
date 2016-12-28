@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sillabi Supply</title>
+	<title>Syllabi Supply</title>
 
 	<style type="text/css">
 		#header {
@@ -35,31 +35,65 @@
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
-			background-color: #333;
+			background-color: #86A5D9;
 			position: fixed;
 			top: 0;
 			width: 100%;
+			vertical-align: middle;
+			display: inline;
+			height: 70px;
 		}
 
 		.two {
 			float: left;
+			display: inline;
 		}
 		
 		.two a {
 			display: block;
 			text-align: center;
-			padding: 14px 16px;
 			text-decoration: none;
 		 }
 		
 		body {
 			padding: 0;
+			padding-top: 40px;
 			margin: 0;
+			background-color: #3D4C7C;
 		}
 
 		.year {
 			float: right;
 		}
+
+		
+
+		#content ul li:hover {
+			padding-left: 3px;
+			padding-right: 3px;
+			border-left: 2px solid #000000;
+			border-right: 2px solid #000000;
+		}
+
+		#content ul li {
+			padding-left: 4.5px;
+			padding-right: 1px;
+		}
+
+		#title {
+			font-family: 'Oswald', sans-serif;
+			letter-spacing: 2px;
+			font-size: 1em;
+			color: white;
+		}
+
+		.subTitle {
+			font-family: 'Roboto', sans-serif;
+			letter-spacing: 1.5px;
+			font-size: .5em;
+		}
+
+		
 
 
 			
@@ -71,6 +105,8 @@
 	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
 
 	<script type="text/javascript" src="customscroll/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -88,15 +124,15 @@
 		<nav>
 			<ul class="one">
 				<li class="two">
-					<a href="http://google.ca"> SILLABI SUPPLY </a>
+					<a href="http://google.ca" id="title" style="padding-left:32px;"><b>SYLLABI SUPPLY</b></a>
 				</li>
 				
-				<li class="two" style="float:right">
-					<a href="http://google.ca">GitHub Code</a>
+				<li class="two subTitle" style="float:right; padding-right:16px;">
+					<a href="http://google.ca"><b>GITHUB CODE</b></a>
 				</li>
 
-				<li class="two" style="float:right">
-					<a href="http://google.com">Submit a Syllabus</a>
+				<li class="two subTitle" style="float:right">
+					<a href="http://google.com"><b>SUBMIT A SYLLABUS</b></a>
 				</li>
 				
 			</ul>
@@ -105,8 +141,8 @@
 
 	<div id="content">
 		<ul class="courses">
-			<li>
-				<a href="/Syllabi-Supply/web/viewer.html?file=syllabi/CSC104_F2016.pdf" class="iframe">CSC104</a>
+			<li href="/Syllabi-Supply/web/viewer.html?file=syllabi/CSC104_F2016.pdf" class="iframe" id="testing">
+				<span>CSC104</span>
 				<span class="year">Fall 2016</span>
 			</li>
 			<li>
@@ -126,14 +162,10 @@
 				<span class="year">Winter 2016</span>
 			</li>
 			<li>
-				<a href="/Syllabi-Supply/web/viewer.html?file=syllabi/CSC104_F2016.pdf" class="iframe">CSC165</a>
+				<a href="/Syllabi-Supply/web/viewer.html?file=syllabi/CSC165_F2016.pdf" class="iframe">CSC165</a>
 				<span class="year">Fall 2016</span>
 			</li>
 		</ul>
-	</div>
-
-	<div class="mCustomScrollbar" data-mcs-theme="dark">
-		<a href="/Syllabi-Supply/web/viewer.html?file=syllabi/Test.pdf" class="iframe">CLICK ME!</a>
 	</div>
 
 </body>
