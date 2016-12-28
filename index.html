@@ -10,7 +10,7 @@
 			/*padding: 3em;*/
 			padding-left: 5%;
 			overflow: hidden;
-			width: 40%;
+			width: 30%;
 		}
 
 		.one {
@@ -52,8 +52,8 @@
 		}
 
 		#content ul li {
-			padding-left: 4.5px;
-			padding-right: 4.5px;
+			/*padding-left: 4.5px;
+			padding-right: 4.5px;*/
 
 			padding-top: 10px;
 			padding-bottom: 10px;
@@ -91,14 +91,30 @@
 
 		.iframe {
 			font-family: 'Oswald', sans-serif;
-			letter-spacing: 2px;
+			letter-spacing: 1.5px;
 			color: white;
+			font-weight: 400;
 		}
 
 		.year {
+			font-family: 'Oswald', sans-serif;
 			float: right;
 			letter-spacing: normal;
 			color: rgba(255,255,255,0.35);
+			font-weight: 300;
+		}
+
+		.content-title {
+			padding-left: 5%;
+			font-family: 'Oswald', sans-serif;
+			font-variant: small-caps;
+			letter-spacing: 2px;
+			font-size: 1.5em;
+			color: white;
+		}
+
+		#search-div {
+			padding-left: 5%
 		}
 
 			
@@ -111,7 +127,7 @@
 
 	<script type="text/javascript" src="customscroll/jquery.mCustomScrollbar.concat.min.js"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto" rel="stylesheet">
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -145,7 +161,32 @@
 	</header>
 
 	<div id="content">
-		<ul class="courses">
+		<div class="content-title">
+			<b>University of Toronto Courses</b>
+		</div>
+		<div id="search-div">
+			<input type="text" name="search-box" id="search-box" value placeholder="Search" onkeyup="filter(this)">
+
+			<script language="javascript" type="text/javascript">
+		function filter(element) {
+			var value = $(element).val();
+
+			$("#course-list > li").each(function() {
+				var code1 = $(this).text().replace("Fall", "");
+				var code2 = code1.replace("Winter", "");
+				var code3 = code2.replace("2016", "");
+				var code4 = code3.replace("2015", "");
+
+				if (code4.search(value) > -1) {
+					$(this).show();
+				} else {
+					$(this).hide();
+				}
+			});
+		}
+	</script>
+		</div>
+		<ul class="courses" id="course-list">
 			<li href="/Syllabi-Supply/web/viewer.html?file=syllabi/CSC104_F2016.pdf" class="iframe">
 				<span>CSC104</span>
 				<span class="year">Fall 2016</span>
