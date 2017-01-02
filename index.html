@@ -64,7 +64,6 @@
 			-moz-transition: background-color .25s ease-in;
 			-o-transition: background-color .25s ease-in;
 			transition: background-color .25s ease-in;
-
 		}
 
 		#title {
@@ -126,7 +125,6 @@
 			padding-bottom: 20px;
 		}
 
-
 		input[type=text] {
 			width: 38.5%;
 			padding: 8px 10px;
@@ -165,7 +163,8 @@
 			text-align: center;
 			padding-top: 5px;
 		}
-		 html {
+		
+		html {
 		 	min-height: 100%;
 		 	position: relative;
 		 	padding-bottom: 40px;
@@ -222,23 +221,23 @@
 			<input type="text" name="search-box" id="search-box" value placeholder="Search" onkeyup="filter(this)">
 
 			<script language="javascript" type="text/javascript">
-		function filter(element) {
-			var value = $(element).val().toUpperCase();
+				function filter(element) {
+					var value = $(element).val().toUpperCase();
 
-			$("#course-list > li").each(function() {
-				var code1 = $(this).text().replace("Fall", "");
-				var code2 = code1.replace("Winter", "");
-				var code3 = code2.replace("2016", "");
-				var code4 = code3.replace("2015", "");
+					$("#course-list > li").each(function() {
+						var code1 = $(this).text().replace("Fall", "");
+						var code2 = code1.replace("Winter", "");
+						var code3 = code2.replace("2016", "");
+						var code4 = code3.replace("2015", "");
 
-				if (code4.search(value) > -1 || code4=="") {
-					$(this).show();
-				} else {
-					$(this).hide();
+						if (code4.search(value) > -1 || code4=="") {
+							$(this).show();
+						} else {
+							$(this).hide();
+						}
+					});
 				}
-			});
-		}
-	</script>
+			</script>
 		</div>
 		<ul class="courses" id="course-list">
 			<li href="/Syllabi-Supply/web/viewer.html?file=syllabi/CSC104_F2016.pdf" class="iframe">
@@ -365,6 +364,5 @@
 		<br>
 		<a href="http://intern.supply" target="_blank">Design Based off of Intern.supply</a>
 	</div>
-
 </body>
 </html>
