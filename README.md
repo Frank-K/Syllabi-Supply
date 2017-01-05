@@ -9,3 +9,6 @@ The design of the website is based heavily off of the design of [Intern.Supply](
 
 ## Disclaimer
 Courses and professors change from year to year so please keep that in mind when browsing the syllabi. There is no guarantee that the current years content / mark breakdown / assignments / **textbook** / ect. will be the same as previous years.
+
+## License
+This project licensed under the [General Public Use License](https://raw.githubusercontent.com/Frank-K/Syllabi-Supply/master/LICENCE)
