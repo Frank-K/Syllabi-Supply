@@ -1,4 +1,4 @@
-# Syllabi-Supply
+# Syllabi Supply
 A collection of University of Toronto course syllabi for students to look at before they enroll in a course.
 
 ## Motivation
