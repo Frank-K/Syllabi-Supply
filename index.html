@@ -245,6 +245,7 @@
 					var value = $(element).val().toUpperCase();
 
 					$("#course-list > li").each(function() {
+						/*
 						var code1 = $(this).text().replace("Fall", "");
 						var code2 = code1.replace("Winter", "");
 						var code3 = code2.replace("2016", "");
@@ -255,6 +256,21 @@
 						} else {
 							$(this).hide();
 						}
+						*/
+
+						var code = "";
+
+						if ( this.innerText != null && this.innerText != undefined ) {
+							code = this.innerText.slice(0,7);
+							console.log(code);
+						}
+
+						if (code.search(value) > -1) {
+							$(this).show();
+						} else {
+							$(this).hide();
+						}
+
 					});
 				}
 			</script>
