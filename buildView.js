@@ -27,7 +27,7 @@ function buildCourseView() {
 		courseSemester = getSemester(FILE_LIST[x].slice(7,8));
 		courseYear = FILE_LIST[x].slice(8,12);
 
-		courseViewInner = '<li href="' + HREF_BASE + courseCode + '.pdf" class ="iframe">' +
+		courseViewInner = '<li href="' + HREF_BASE + FILE_LIST[x] + '" class ="iframe">' +
 						  '<span class="courseCode">' + courseCode + '</span>' +
 						  '<span class="year">' + courseSemester + ' ' + courseYear + "</span></li>";
 	
