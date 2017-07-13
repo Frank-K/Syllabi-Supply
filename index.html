@@ -245,31 +245,41 @@
 					var value = $(element).val().toUpperCase();
 
 					$("#course-list > li").each(function() {
-						/*
+						
 						var code1 = $(this).text().replace("Fall", "");
 						var code2 = code1.replace("Winter", "");
-						var code3 = code2.replace("2016", "");
-						var code4 = code3.replace("2015", "");
+						var code3 = code2.replace("Summer", "");
+						var code4 = code3.replace("2017", "");
+						var code5 = code4.replace("2016", "");
+						var code6 = code5.replace("2015", "");
+						var code7 = code6.replace("2014", "");
+						var code8 = code7.replace("2013", "");
 
-						if (code4.search(value) > -1 || code4=="") {
+						if (code8.search(value) > -1 || code8=="") {
 							$(this).show();
 						} else {
 							$(this).hide();
 						}
-						*/
+						
 
+						/*
 						var code = "";
 
-						if ( this.innerText != null && this.innerText != undefined ) {
-							code = this.innerText.slice(0,7);
-							console.log(code);
-						}
+						//if ( this.innerText != null && this.innerText != undefined && this.innerText != "" ) {
+							code = this.innerText.substring(0,6);
+							console.log(this.innerText);
+							console.log("Course Code: ", code);
+
+							//console.log(this.innerText);
+							//console.log(this.innerText.substring(0,6));
+						//}
 
 						if (code.search(value) > -1) {
 							$(this).show();
 						} else {
 							$(this).hide();
 						}
+						*/
 
 					});
 				}
